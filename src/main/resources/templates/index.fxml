@@ -59,7 +59,7 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button layoutX="129.0" layoutY="23.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #202475;" text="Modificar" textFill="#d3c5c5">
+            <Button fx:id="btnModificar" layoutX="129.0" layoutY="23.0" mnemonicParsing="false" onAction="#modificarTarea" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #202475;" text="Modificar" textFill="#d3c5c5">
                <font>
                   <Font size="14.0" />
                </font>
