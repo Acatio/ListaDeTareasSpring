@@ -64,12 +64,12 @@
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button layoutX="228.0" layoutY="23.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #861b1b;" text="Eliminar" textFill="#d3c5c5">
+            <Button fx:id="btnEliminar" layoutX="228.0" layoutY="23.0" mnemonicParsing="false" onAction="#eliminarTarea" prefHeight="30.0" prefWidth="83.0" style="-fx-background-color: #861b1b;" text="Eliminar" textFill="#d3c5c5">
                <font>
                   <Font size="14.0" />
                </font>
             </Button>
-            <Button layoutX="329.0" layoutY="23.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: #d6d53a;" text="Limpiar Formulario" textFill="#1e1e19">
+            <Button fx:id="btnLimpiar" layoutX="329.0" layoutY="23.0" mnemonicParsing="false" onAction="#limpiarFormulario" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: #d6d53a;" text="Limpiar Formulario" textFill="#1e1e19">
                <font>
                   <Font size="14.0" />
                </font>

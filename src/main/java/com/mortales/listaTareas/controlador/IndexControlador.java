@@ -101,6 +101,24 @@ public class IndexControlador implements Initializable
         limpiarDatos();
     }
 
+    @FXML
+    private void eliminarTarea(){
+        if (idTarea==null)
+        {
+            mostrarMensaje("Error", "Debe seleccionar una tarea");
+            return;
+        }
+        Tarea tareaAeliminar=new Tarea();
+        tareaAeliminar.setIdTarea(idTarea);
+        tareaServicio.eliminarTarea(tareaAeliminar);
+        limpiarDatos();
+        listarTareas();
+    }
+    @FXML
+    private void limpiarFormulario(){
+        limpiarDatos();
+    }
+
     private void inicializarTabla()
     {
         tablaTareas.setOnMouseClicked(mouseEvent ->
